@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillbuild Training</title>
+    <style>
+        .white {
+            background-color: white;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+            height: 200px;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid purple;
+        }
+    </style>
 </head>
 <body>
     <h1>This is setup video for beginners</h1>
+    <div class="main1">123</div>
+    <div class="main2">123</div>
+    <div class="main3">123</div>
 </body>
+
+<script>
+    const element1 = document.querySelector('.main1')
+    const element2 = document.querySelector('.main2')
+    const element3 = document.querySelector('.main3')
+
+
+    setInterval(() => {
+        element1.classList.toggle('white')
+        element2.classList.toggle('blue')
+        element3.classList.toggle('red')
+    }, 1000)
+</script>
 </html>
